@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>msegs</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    
+        <div class="navbar">
+            
+            <nav>
+			 <div class="logo">
+            Pahoss Online Booking
+         </div>
+		 <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+                <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="book.html">Book Now</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Feedback</a></li>
+			<li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+						  
+         </ul>
+            </nav>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+			
+			
+			 <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		<input type="radio" id="car" name="Vehicle type" value="car">
+			  <label for="car">Car</label>&nbsp;
+			  <input type="radio" id="Bike" name="Vehicle type" value="bike">
+			  <label for="bike">Bike</label><br>
+			  <input type="radio" id="Commercial Vehicle" name="Vehicle type" value="comercial">
+			  <label for="Commercial Vehicle">Commercial Vehicle</label><br>-->
+			  
+		     <input type='text'class='input-field'placeholder='Name' required>
+			 <input type="radio" id="male" name="gender" value="male">
+			  <label for="male">Male</label>&nbsp;
+			  <input type="radio" id="female" name="gender" value="female">
+			  <label for="female">Female</label><br>
+		    
+			  <input type='text'class='input-field'placeholder='Address' required>
+			   <input type='number'class='input-field'placeholder='Mobile Number' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+			  
+			  <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		    
+			   <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+	<div class="banner">
+			<img src="images/p1.jpg" >
+			
+	</div>
+		<div class="main">
+			<section>
+				
+				<p>The aim of the project is to develop web application software along with mobile apps to enable to locate all Parking places under PAHOSS scheme by integrating with Google Maps. The mobile application shall  show the number of vehicles and type of vehicles that can be parked, availability of parking and the detailed information about the  owner’s name and his phone number. These detailed information shall be available to be viewed by the citizens through responsive web application as well as mobile apps that shall increase efficiency in seeking, management of parking and processing along with ease and convenience in parking a vehicle by the citizens.   </>
+				<br>
+				<br>
+			<h2><a href="book.html" >Book Now</a></h2>
+			</section>
+			<aside class="right">
+				<img src="images/p3.jpg" >
+			
+			</aside>
+			
+		</div>
+		<!--end content-->
+		
+		
+		
+		<footer>
+			<div class="container">
+            
+            
+			<p class="middle">This website belongs to Department Urban Development and Poverty Alleviation (UD&PA), Mizoram</p>
+			
+            <p class="end">Msegs Assignment</p>
+        </div>
+		</footer>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+	
+</body>
+</html>
